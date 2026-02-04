@@ -26,49 +26,37 @@ body{
 
 }
 
-.profile-header{
-    display: flex;
+.profile-card .profile-header{
+   display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    padding: 1.5rem;
-    gap: 1rem;
-    margin-top: 10px;
+    gap: 10px;
+    height: 100%;
     border-bottom: 1px solid hsl(227, 10%, 90%);
 }
 
-.profile-photo{
-    height: 6rem;
-    width: 6rem;
+.profile-card .profile-header img{
     border-radius: 50%;
+    margin-top: 20px;
 }
 
-.profile-name{
-    font-family: 'Kumbh Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.3rem;
-}
-
-.profile-age{
-    font-weight: 700;
-}
-
-span, p{
-   color: var(--text-color);
-   font-weight: 400;
-}
-
-strong{
-    font-weight: 700;
-}
-
-.profile-stats{
+.profile-card .profile-numbers{
     display: flex;
-    justify-content: space-around;
-    padding: 1rem;
-}
-
-.stat{
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.profile-numbers .info .number, 
+.profile-card .profile-header p{
+    font-weight: 700;
+}
+
+.profile-card .profile-header .profile-age,
+.profile-card .profile-header .profile-location, 
+.profile-numbers .info .counter-type{
+    color: var(--text-color);
 }
